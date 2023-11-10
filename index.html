@@ -22,7 +22,16 @@ var myQuestions = [
       c: 'Ryan Reynolds'
     },
     correctAnswer: 'c'
-  }
+  },
+ {
+    question: "Who was the villain in DeadPool?",
+    answers: {
+      a: 'Coloso',
+      b: 'Francis',
+      c: 'Weasel'
+    },
+    correctAnswer: 'b'
+  },
 ];
 
 var quizContainer = document.getElementById('quiz');
@@ -90,7 +99,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     }
 
    
-    resultsContainer.innerHTML = numCorrect + '2 out of 2' + questions.length;
+    resultsContainer.innerHTML = numCorrect + '3 out of 3' + questions.length;
   }
 
 
